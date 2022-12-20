@@ -1,0 +1,619 @@
+{
+	"info": {
+		"_postman_id": "7ff02c59-4d9c-4779-a49c-1c179181df74",
+		"name": "PolicyManager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17353116"
+	},
+	"item": [
+		{
+			"name": "Admin endpoints",
+			"item": [
+				{
+					"name": "Get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/admin/view/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"view",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Sample response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/admin/view/all",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"view",
+										"all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2451"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"993-BaofRXjFnAbYKBxKXqAW83exloI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 09:08:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"msg\": \"All users fetched successfully\",\n    \"data\": [\n        {\n            \"_id\": \"63a16024eaa6ed9ef0f76e34\",\n            \"objectId\": \"Ou_rlbvw0ubno\",\n            \"policyUrl\": \"https://firebasestorage.googleapis.com/v0/b/policymanager-34a0a.appspot.com/o/Ou_rlbvw0ubno_2312100714153401000.pdf?alt=media&token=Ou_rlbvw0ubno\",\n            \"review\": \"REVIEWED\",\n            \"createdAt\": \"2022-12-20T07:11:32.932Z\",\n            \"updatedAt\": \"2022-12-20T07:15:00.612Z\",\n            \"__v\": 0,\n            \"address\": \"ABC road, XY Street, Z city, 115600\",\n            \"contactNo\": \"1234\",\n            \"name\": \"Gaurav\",\n            \"policyNo\": \"1234-2345-3456\"\n        },\n        {\n            \"_id\": \"63a1602aeaa6ed9ef0f76e36\",\n            \"objectId\": \"Ou_albvw0ypi6\",\n            \"policyUrl\": \"https://firebasestorage.googleapis.com/v0/b/policymanager-34a0a.appspot.com/o/Ou_albvw0ypi6_2312100714153401000.pdf?alt=media&token=Ou_albvw0ypi6\",\n            \"review\": \"PENDING\",\n            \"createdAt\": \"2022-12-20T07:11:38.039Z\",\n            \"updatedAt\": \"2022-12-20T07:11:38.039Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"63a1602deaa6ed9ef0f76e38\",\n            \"objectId\": \"Ou_tlbvw11own\",\n            \"policyUrl\": \"https://firebasestorage.googleapis.com/v0/b/policymanager-34a0a.appspot.com/o/Ou_tlbvw11own_2312100714153401000.pdf?alt=media&token=Ou_tlbvw11own\",\n            \"review\": \"REVIEWED\",\n            \"createdAt\": \"2022-12-20T07:11:41.629Z\",\n            \"updatedAt\": \"2022-12-20T07:11:41.629Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"63a16047eaa6ed9ef0f76e3a\",\n            \"objectId\": \"Ou_mlbvw1l0k5\",\n            \"policyUrl\": \"https://firebasestorage.googleapis.com/v0/b/policymanager-34a0a.appspot.com/o/Ou_mlbvw1l0k5_2312100714153401000.pdf?alt=media&token=Ou_mlbvw1l0k5\",\n            \"review\": \"PENDING\",\n            \"createdAt\": \"2022-12-20T07:12:08.001Z\",\n            \"updatedAt\": \"2022-12-20T07:12:08.001Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"63a17b232e4773b14fdf39e2\",\n            \"objectId\": \"Ou_plbw04yeig\",\n            \"policyUrl\": \"https://firebasestorage.googleapis.com/v0/b/policymanager-34a0a.appspot.com/o/Ou_plbw04yeig_2312100714153401000.pdf?alt=media&token=Ou_plbw04yeig\",\n            \"review\": \"PENDING\",\n            \"createdAt\": \"2022-12-20T09:06:43.644Z\",\n            \"updatedAt\": \"2022-12-20T09:06:43.644Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"63a17b372e4773b14fdf39e4\",\n            \"objectId\": \"Ou_hlbw05e8y6\",\n            \"policyUrl\": \"https://firebasestorage.googleapis.com/v0/b/policymanager-34a0a.appspot.com/o/Ou_hlbw05e8y6_2312100714153401000.pdf?alt=media&token=Ou_hlbw05e8y6\",\n            \"review\": \"PENDING\",\n            \"createdAt\": \"2022-12-20T09:07:03.146Z\",\n            \"updatedAt\": \"2022-12-20T09:07:03.146Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"63a17b3a2e4773b14fdf39e6\",\n            \"objectId\": \"Ou_tlbw05gyxy\",\n            \"policyUrl\": \"https://firebasestorage.googleapis.com/v0/b/policymanager-34a0a.appspot.com/o/Ou_tlbw05gyxy_2312100714153401000.pdf?alt=media&token=Ou_tlbw05gyxy\",\n            \"review\": \"PENDING\",\n            \"createdAt\": \"2022-12-20T09:07:06.458Z\",\n            \"updatedAt\": \"2022-12-20T09:07:06.458Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get user by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/admin/view/user/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"view",
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "Ou_rlbvw0ubno"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Sample response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/admin/view/user/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"view",
+										"user",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "Ou_rlbvw0ubno"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "486"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1e6-gIkR+TyPt7t/COwl2MvE1FjvinI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 09:10:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"msg\": \"All users fetched successfully\",\n    \"data\": {\n        \"_id\": \"63a16024eaa6ed9ef0f76e34\",\n        \"objectId\": \"Ou_rlbvw0ubno\",\n        \"policyUrl\": \"https://firebasestorage.googleapis.com/v0/b/policymanager-34a0a.appspot.com/o/Ou_rlbvw0ubno_2312100714153401000.pdf?alt=media&token=Ou_rlbvw0ubno\",\n        \"review\": \"REVIEWED\",\n        \"createdAt\": \"2022-12-20T07:11:32.932Z\",\n        \"updatedAt\": \"2022-12-20T07:15:00.612Z\",\n        \"__v\": 0,\n        \"address\": \"ABC road, XY Street, Z city, 115600\",\n        \"contactNo\": \"1234\",\n        \"name\": \"Gaurav\",\n        \"policyNo\": \"1234-2345-3456\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update user by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sanjay Gupta\",\r\n    \"address\": \"B308, Sky heights, Park Street, Kolkata, 700007\",\r\n    \"contactNo\": \"+919856707765\",\r\n    \"policyNo\": \"1234-2345-3456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/admin/update/user/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"update",
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "Ou_hlbw05e8y6"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Sample response",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Sanjay Gupta\",\r\n    \"address\": \"B308, Sky heights, Park Street, Kolkata, 700007\",\r\n    \"contactNo\": \"+919856707765\",\r\n    \"policyNo\": \"1234-2345-3456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/admin/update/user/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"update",
+										"user",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "Ou_hlbw05e8y6"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "62"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3e-LQJFmOiGmYjxXguCKsqtQtxw13E\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 09:14:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"msg\": \"User updated successfully\",\n    \"objectId\": \"Ou_hlbw05e8y6\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get pending users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/admin/view/pending",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"view",
+								"pending"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Sample response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/admin/view/pending",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"view",
+										"pending"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1684"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"694-vAi3+XLvFJoZtMjemeUoCm+zVoQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 09:15:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"msg\": \"All users fetched successfully\",\n    \"data\": [\n        {\n            \"_id\": \"63a1602aeaa6ed9ef0f76e36\",\n            \"objectId\": \"Ou_albvw0ypi6\",\n            \"policyUrl\": \"https://firebasestorage.googleapis.com/v0/b/policymanager-34a0a.appspot.com/o/Ou_albvw0ypi6_2312100714153401000.pdf?alt=media&token=Ou_albvw0ypi6\",\n            \"review\": \"PENDING\",\n            \"createdAt\": \"2022-12-20T07:11:38.039Z\",\n            \"updatedAt\": \"2022-12-20T07:11:38.039Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"63a16047eaa6ed9ef0f76e3a\",\n            \"objectId\": \"Ou_mlbvw1l0k5\",\n            \"policyUrl\": \"https://firebasestorage.googleapis.com/v0/b/policymanager-34a0a.appspot.com/o/Ou_mlbvw1l0k5_2312100714153401000.pdf?alt=media&token=Ou_mlbvw1l0k5\",\n            \"review\": \"PENDING\",\n            \"createdAt\": \"2022-12-20T07:12:08.001Z\",\n            \"updatedAt\": \"2022-12-20T07:12:08.001Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"63a17b232e4773b14fdf39e2\",\n            \"objectId\": \"Ou_plbw04yeig\",\n            \"policyUrl\": \"https://firebasestorage.googleapis.com/v0/b/policymanager-34a0a.appspot.com/o/Ou_plbw04yeig_2312100714153401000.pdf?alt=media&token=Ou_plbw04yeig\",\n            \"review\": \"PENDING\",\n            \"createdAt\": \"2022-12-20T09:06:43.644Z\",\n            \"updatedAt\": \"2022-12-20T09:06:43.644Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"63a17b372e4773b14fdf39e4\",\n            \"objectId\": \"Ou_hlbw05e8y6\",\n            \"policyUrl\": \"https://firebasestorage.googleapis.com/v0/b/policymanager-34a0a.appspot.com/o/Ou_hlbw05e8y6_2312100714153401000.pdf?alt=media&token=Ou_hlbw05e8y6\",\n            \"review\": \"PENDING\",\n            \"createdAt\": \"2022-12-20T09:07:03.146Z\",\n            \"updatedAt\": \"2022-12-20T09:07:03.146Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"63a17b3a2e4773b14fdf39e6\",\n            \"objectId\": \"Ou_tlbw05gyxy\",\n            \"policyUrl\": \"https://firebasestorage.googleapis.com/v0/b/policymanager-34a0a.appspot.com/o/Ou_tlbw05gyxy_2312100714153401000.pdf?alt=media&token=Ou_tlbw05gyxy\",\n            \"review\": \"PENDING\",\n            \"createdAt\": \"2022-12-20T09:07:06.458Z\",\n            \"updatedAt\": \"2022-12-20T09:07:06.458Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Health Check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/admin/ping",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"ping"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Sample response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/admin/ping",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"ping"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "50"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"32-rHYYKLsj05mMljpu2KzACH55kmg\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 09:08:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"msg\": \"Admin enpoints are up and running...🚀\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User endpoints",
+			"item": [
+				{
+					"name": "Upload policy pdf",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Admin/Downloads/2312100714153401000.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/user/upload",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"upload"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Sample response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/Admin/Downloads/2312100714153401000.pdf"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/user/upload",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"upload"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "265"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"109-kb5eRHwcQqvq3izeBIcQ0wQE9jA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 09:07:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"msg\": \"User added successfully\",\n    \"objectId\": \"Ou_tlbw05gyxy\",\n    \"fileName\": \"Ou_tlbw05gyxy_2312100714153401000.pdf\",\n    \"url\": \"https://firebasestorage.googleapis.com/v0/b/policymanager-34a0a.appspot.com/o/Ou_tlbw05gyxy_2312100714153401000.pdf?alt=media&token=Ou_tlbw05gyxy\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Health Check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/user/ping",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"ping"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Sample response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/user/ping",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"ping"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "49"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"31-gDEPUMLWaepBqUzXcBhKop9PgsU\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 09:07:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"msg\": \"User enpoints are up and running...🚀\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
